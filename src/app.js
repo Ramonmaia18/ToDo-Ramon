@@ -9,6 +9,10 @@ app.use(express.json())
 
 app.use(cors())
 
+app.length("/testedeploy", (req, res)=> {
+    res.status(200).send({msg: "Api sendo acessada remotamente"});
+});
+
 tarefasController(app)
 usuariosController(app)
 
