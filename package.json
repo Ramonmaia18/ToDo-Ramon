@@ -8,6 +8,7 @@
     "nodemon": "^2.0.21"
   },
   "scripts": {
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
     "bdon" : "node ./src/infra/bdconnect.js",
     "bdoff" : "node ./src/infra/bddisconnect.js",
