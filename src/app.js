@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use(cors())
 
-app.length("/testedeploy", (req, res)=> {
+app.get("/testedeploy", (req, res)=> {
     res.status(200).send({msg: "Api sendo acessada remotamente"});
 });
 
